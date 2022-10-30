@@ -1,17 +1,17 @@
-.mdiary_logo {
+.md_logo {
     font-family: 'Monoton', cursive;
 }
 
-.mdiary_footer_button{
-    font-size:.6rem;
+.md_footer_button {
+    font-size: .9rem;
 }
 
-.mdiary_footer{
+.md_footer {
     text-align:center;
     margin-top: 2rem;
 }
 
-.mdiary_header{
+.md_header {
     text-align:center;
     margin-top: 2rem 0;
 }
