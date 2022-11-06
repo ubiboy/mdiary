@@ -4,26 +4,27 @@
         Mdiary
       </h1>
     </div>
-    <div>
+    <div class="md_header_navbar">
 
-        <a href="{% url 'articleapp:list' %}">
+        <a href="{% url 'articleapp:list' %}" class="md_header_nav">
             <span>Articles</span>
         </a>
-        <span>nav1</span>
-        <span>nav2</span>
-        <span>nav3</span>
+        <a href="{% url 'articleapp:list' %}" class="md_header_nav">
+            <span>Projects</span>
+        </a>
+
         {% if not user.is_authenticated %}
-        <a href="{% url 'accountapp:login' %}?next={{ request.path }}">
+        <a href="{% url 'accountapp:login' %}?next={{ request.path }}" class="md_header_nav">
             <span>login</span>
         </a>
-        <a href="{% url 'accountapp:create' %}">
+        <a href="{% url 'accountapp:create' %}" class="md_header_nav">
             <span>SignUp</span>
         </a>
         {% else %}
-        <a href="{% url 'accountapp:detail' pk=user.pk %}">
+        <a href="{% url 'accountapp:detail' pk=user.pk %}" class="md_header_nav">
             <span>Mypage</span>
         </a>
-        <a href="{% url 'accountapp:logout' %}?next={{ request.path }}">
+        <a href="{% url 'accountapp:logout' %}?next={{ request.path }}" class="md_header_nav">
             <span>logout</span>
         </a>
         {% endif %}
