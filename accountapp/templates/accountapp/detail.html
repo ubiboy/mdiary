@@ -12,15 +12,12 @@
       <h2 style="font-family:'NanumSquareB'">
         {{ target_user.profile.nickname }}
           {% if target_user == user %}
-<!--          <a class="material-icons"-->
-<!--             style="box-shadow:0 0 4px #CCC; border-radius: 10rem;padding: .4rem;"-->
-<!--             href="{% url 'profileapp:update' pk=target_user.profile.pk %}">-->
-<!--            edit-->
-<!--          </a>-->
               <a class="material-symbols-outlined"
-                 style="box-shadow:0 0 4px #CCC; border-radius: 10rem;padding: .4rem;
+                 style="box-shadow:0 0 4px #CCC; border-radius: 10rem;padding: .4rem;"
                  href="{% url 'profileapp:update' pk=target_user.profile.pk %}">
-                edit_document
+
+                 edit_document
+
               </a>
           {% endif %}
       </h2>
@@ -40,18 +37,20 @@
       {% endif %}
 
       {% if target_user == user %}
-      <a class="material-symbols-outlined" href="{% url 'accountapp:update' pk=user.pk %}"
-      style="margin-right:1rem; box-shadow:0 0 4px #CCC; border-radius: 10rem;padding: .4rem;">
-        <p>
+      <a class="material-symbols-outlined"
+      style="margin-right:1rem; box-shadow:0 0 4px #CCC; border-radius: 10rem;padding: .4rem;"
+      href="{% url 'accountapp:update' pk=user.pk %}">
+
           manage_accounts
-        </p>
+
       </a>
 
-      <a class="material-symbols-outlined" href="{% url 'accountapp:delete' pk=user.pk %}"
-      style="margin-left:1rem; margin-right:1rem; box-shadow:0 0 4px #CCC; border-radius: 10rem;padding: .4rem;">
-        <p>
+      <a class="material-symbols-outlined"
+      style="margin-left:1rem; margin-right:1rem; box-shadow:0 0 4px #CCC; border-radius: 10rem;padding: .4rem;"
+      href="{% url 'accountapp:delete' pk=user.pk %}">
+
           digital_out_of_home
-        </p>
+
       </a>
       {% endif %}
 

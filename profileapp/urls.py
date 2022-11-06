@@ -4,7 +4,9 @@ from profileapp.views import ProfileCreateView, ProfileUpdateView
 
 app_name = 'profileapp'
 
-urlpatterns =[
+urlpatterns = [
+
     path('create/', ProfileCreateView.as_view(), name='create'),
-    path('upfsyr/<int:pk>/', ProfileUpdateView.as_view(), name='update'),
+    path('update/<int:pk>/', ProfileUpdateView.as_view(), name='update'),
+
 ]
