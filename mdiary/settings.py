@@ -14,6 +14,8 @@ from pathlib import Path
 
 import environ
 import os
+from django.contrib.messages import constants as messages
+
 
 from django.urls import reverse_lazy
 
@@ -69,6 +71,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
 
 ROOT_URLCONF = 'mdiary.urls'
 
