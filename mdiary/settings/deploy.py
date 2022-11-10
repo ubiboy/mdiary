@@ -5,7 +5,6 @@ env = environ.Env(
     DEBUG=(bool, False)
 )
 
-
 # Take environment variables from .env file
 environ.Env.read_env(
     env_file=os.path.join(BASE_DIR, '.env'))
