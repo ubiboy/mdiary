@@ -5,7 +5,7 @@ def read_secret(secret_name):
 
     file = open('/run/secrets/' + secret_name)
     secret = file.read()
-    screat = secret.rstrip().lstrip()
+    secret = secret.rstrip().lstrip()
     file.close()
 
     return secret
