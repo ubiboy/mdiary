@@ -10,7 +10,7 @@ class ArticleCreationForm(ModelForm):
     # content = forms.CharField(widget=forms.Textarea(attrs={'class': 'editable',
     #                                                        'style': 'height: auto; text-align:left'}))
     content = forms.Textarea(attrs={'class': 'editable',
-                                                           'style': 'height: auto; text-align:left'})
+                                    'style': 'height: auto; text-align:left'})
     project = forms.ModelChoiceField(queryset=Project.objects.all(), required=False)
 
     class Meta:

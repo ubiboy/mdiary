@@ -1,5 +1,9 @@
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
 .md_logo {
-    font-family: 'Monoton', cursive;
+    font-family: 'Reem Kufi', sans-serif;
 }
 
 .md_footer_button {
@@ -38,4 +42,11 @@ a:hover {
 
 .md_header_navbar {
     margin: 1rem 0;
+}
+
+div{ -webkit-touch-callout: none;
+     user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     -webkit-user-select: none;
 }
